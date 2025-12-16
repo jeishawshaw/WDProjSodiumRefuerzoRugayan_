@@ -8,7 +8,65 @@
   
 <link rel="stylesheet" href="something.css"> 
 <style>
+
+/* Hobbies checklist aligned to the left */
+#hobbies ul {
+  list-style: none;
+  padding-left: 50px;   /* aligns with your paragraphs */
+  text-align: left;
+}
+
+#hobbies li {
+  margin: 12px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#hobbies input[type="checkbox"] {
+  margin-right: 15px;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/* layout for checklist + image */
+.hobbies-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 50px;
+  background-color:rgb(119, 213, 250);
+}
+
+/* checklist left */
+#hobbies ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  width: 50%;
+}
+
+#hobbies li {
+  margin: 12px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#hobbies input[type="checkbox"] {
+  margin-right: 15px;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+#hobby-img {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
      body{
+      
         background-image: url(https://hips.hearstapps.com/hmg-prod/images/taylor-swift-rhode-island-house-1595612001.jpg);
     }
     header h1{
@@ -44,7 +102,12 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
+    ul{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+main p{
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -57,6 +120,20 @@
     <h3>A journey through the different eras of Taylor Swift </h3>
   </header>
 </body>
+<script>
+  const checkboxes = document.querySelectorAll(".hobby");
+
+  checkboxes.forEach(box => {
+    box.addEventListener("change", () => {
+      // small "pop" animation on the image
+      const img = document.getElementById("hobby-img");
+      img.style.transform = "scale(1.15)";
+      setTimeout(() => {
+        img.style.transform = "scale(1.05)";
+      }, 200);
+    });
+  });
+</script>
 
   <nav>
     <ul>
@@ -72,36 +149,52 @@
 <b>
 <br>
     <h1>
-        Taylor's Studio Albums
+        Facts About Taylor Swift
     </h1>
 </b>
     <main>
 
-        <section>
-            <h2>Hobbies & Interests</h2>
-            <p>Taylor Swift enjoys writing songs, reading, cooking, and baking. She loves exploring new places and often shares glimpses of her travel adventures with fans. Aside from music, she has a passion for fashion and often designs or collaborates on some of her stage outfits.</p>
-            <img width="300px" height="auto" src="https://tecolotito.elsiglodetorreon.com.mx/i/2023/08/1718662.jpeg" alt="swiftie">
+        <section id="hobbies">
+  <h2>Hobbies & Interests</h2>
+  <p>Check the hobbies Taylor enjoys! 🎵✨</p>
 
-        </section>
+  <div class="hobbies-container">
+    <ul>
+      <li><input type="checkbox" class="hobby"> Writing songs</li>
+      <li><input type="checkbox" class="hobby"> Reading</li>
+      <li><input type="checkbox" class="hobby"> Cooking</li>
+      <li><input type="checkbox" class="hobby"> Baking</li>
+      <li><input type="checkbox" class="hobby"> Traveling</li>
+      <li><input type="checkbox" class="hobby"> Fashion design</li>
+      <li><input type="checkbox" class="hobby"> Stage outfit collaborations</li>
+    </ul>
+    <img
+    
+      src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0F56/production/_127162930_0e46d408-692b-46ce-88cd-2d34e78c3a86.jpg"
+      alt="swiftie"
+      id="hobby-img">
+  </div>
+<br>
+</section>
+
 
         <section>
             <h2>Pets</h2>
             <p>Taylor is a proud pet owner, especially known for her beloved cats, Olivia Benson and Meredith Grey, named after her favorite TV characters. She often features her pets on social media, and they’ve become part of her public persona.</p>
-             <img width="300px" height="auto" src="https://tecolotito.elsiglodetorreon.com.mx/i/2023/08/1718662.jpeg" alt="swiftie">
+             <img width="300px" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQSbY6bzZJyBWx8EXgPJBAVuZtn07DjeC4cQ&s" alt="swiftie">
 
         </section>
 
         <section>
             <h2>Lifestyle</h2>
             <p>Taylor Swift is known for maintaining a balanced lifestyle despite her busy career. She enjoys spending quiet time at home with family, friends, and pets, and she values her privacy. She is also actively involved in philanthropy and supports various social causes.</p>
-            <img width="300px" height="auto" src="https://tecolotito.elsiglodetorreon.com.mx/i/2023/08/1718662.jpeg" alt="swiftie">
-
+            <img width="300px" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBWFN2HTdWDPRRnXv4OEsdG-0ngp8215sUA&s" alt="swiftie">
         </section>
 
         <section>
             <h2>Current Status</h2>
             <p>Currently, Taylor continues to dominate the music scene with successful album releases and world tours. Beyond music, she’s active on social media, engages with her fanbase, and pursues personal projects, including film appearances, endorsements, and songwriting collaborations.</p>
-            <img width="300px" height="auto" src="https://tecolotito.elsiglodetorreon.com.mx/i/2023/08/1718662.jpeg" alt="swiftie">
+            <img width="300px" height="auto" src="https://i8.amplience.net/i/naras/Taylor-Swift-Eras-Tour-Brazil-GettyImages-1801110030" alt="swiftie">
         </section>
     </main>
 

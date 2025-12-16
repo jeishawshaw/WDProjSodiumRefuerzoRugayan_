@@ -8,6 +8,42 @@
 <link rel="stylesheet" href="something.css"> 
 
 <style>
+    #album-game {
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 40px 100px;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#album-game button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: hotpink;
+  color: white;
+  cursor: pointer;
+}
+
+#album-game button:hover {
+  background-color: deeppink;
+}
+
+#album-name {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#album-cover {
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px auto; /* centers the image */
+  display: none; /* hidden initially */
+}
+
+
      body{
         background-image: url(https://images.prestigeonline.com/wp-content/uploads/sites/5/2025/06/05113034/taylor-swift-masters-1600x900.jpeg);
 
@@ -43,6 +79,36 @@
     }
 </style>
 </head>
+
+<script>
+  const albums = [
+    { name: "Taylor Swift (Debut)", cover: "https://upload.wikimedia.org/wikipedia/en/1/1f/Taylor_Swift_-_Taylor_Swift.png" },
+    { name: "Fearless", cover: "https://upload.wikimedia.org/wikipedia/en/8/86/Taylor_Swift_-_Fearless.png" },
+    { name: "Speak Now", cover: "https://upload.wikimedia.org/wikipedia/en/8/8f/Taylor_Swift_-_Speak_Now_cover.png" },
+    { name: "Red", cover: "https://upload.wikimedia.org/wikipedia/en/e/e8/Taylor_Swift_-_Red.png" },
+    { name: "1989", cover: "https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png" },
+    { name: "Reputation", cover: "https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png" },
+    { name: "Lover", cover: "https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png" },
+    { name: "Folklore", cover: "https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png" },
+    { name: "Evermore", cover: "https://upload.wikimedia.org/wikipedia/en/4/4f/Taylor_Swift_-_Evermore.png" },
+    { name: "Midnights", cover: "https://upload.wikimedia.org/wikipedia/en/9/9f/Taylor_Swift_-_Midnights.png" },
+    { name: "The Tortured Poets Department", cover: "https://upload.wikimedia.org/wikipedia/en/4/4e/Taylor_Swift_-_The_Tortured_Poets_Department.png" },
+    { name: "Speak Now (Taylor’s Version)", cover: "https://upload.wikimedia.org/wikipedia/en/4/4f/Taylor_Swift_-_Speak_Now_%28Taylor%27s_Version%29.png" }
+  ];
+
+  function pickAlbum() {
+    const randomIndex = Math.floor(Math.random() * albums.length);
+    const chosen = albums[randomIndex];
+
+    document.getElementById("album-name").innerText =
+      "✨ You are " + chosen.name + "! ✨";
+
+    const cover = document.getElementById("album-cover");
+    cover.src = chosen.cover;
+    cover.style.display = "block";
+  }
+</script>
+
 <body>
 
   <header>
@@ -71,6 +137,15 @@
     <h1>
         Taylor's Studio Albums
     </h1>
+    <section id="album-game">
+  <h2>Which Taylor Swift Album Are You?</h2>
+
+  <button onclick="pickAlbum()">What is my TS album?</button>
+
+  <h3 id="album-name"></h3>
+  <img id="album-cover" src="" alt="" style="display:none; width:300px; border-radius:20px;">
+</section>
+
 </main>
 
 <b>
@@ -91,7 +166,7 @@
     <div class="overlay">
     <div class="text">Fearless</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album features romantic, hopeful songs about loving bravely even when you’re scared of getting hurt.
     </p>
     </div>
     </div>
@@ -102,7 +177,7 @@
     <div class="overlay">
     <div class="text">Speak Now</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is a confessional album where she says everything she wished she had said out loud.
     </p>
     </div>
     </div>
@@ -113,8 +188,7 @@
     <div class="overlay">
     <div class="text">Red</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
-    </p>
+    <p> This album is a messy, passionate portrait of love that burns bright, breaks fast, and leaves emotional scars.
     </div>
     </div>
     </div>
@@ -124,7 +198,7 @@
     <div class="overlay">
     <div class="text">1989</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is a bold reinvention celebrating independence, self-confidence, and life in the spotlight.
     </p>
     </div>
     </div>
@@ -135,7 +209,7 @@
     <div class="overlay">
     <div class="text">Reputation</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is a dark, defiant response to public backlash that reveals love as her refuge.
     </p>
     </div>
     </div>
@@ -146,7 +220,7 @@
     <div class="overlay">
     <div class="text">Lover</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is a colorful, tender album about choosing love, softness, and emotional honesty.
     </p>
     </div>
     </div>
@@ -157,7 +231,7 @@
     <div class="overlay">
     <div class="text">Folklore</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is a quiet, introspective storytelling about imagined lives, lost love, and lingering sadness.
     </p>
     </div>
     </div>
@@ -168,7 +242,7 @@
     <div class="overlay">
     <div class="text">Evermore</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is a deeper, wintrier companion exploring heartbreak, healing, and acceptance.
     </p>
     </div>
     <div class="info">
@@ -181,7 +255,7 @@
     <div class="overlay">
     <div class="text">Midnights</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is all about late-night confessions about anxiety, ambition, regret, and self-reflection.
     </p>
     </div>
     </div>
@@ -192,7 +266,7 @@
     <div class="overlay">
     <div class="text">The Tortured Poets Department</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This album is a raw, unfiltered outpouring of grief, obsession, and emotional exhaustion after love implodes.
     </p>
     </div>
     </div>
@@ -203,7 +277,7 @@
     <div class="overlay">
     <div class="text">The Life of a Showgirl</div>
     <div class="info">
-    <p> This was Taylor Swift's first produced and released album in her career.
+    <p> This is Taylor Swift' latest released album which is a glittering yet lonely journey of being admired onstage while quietly breaking behind the curtain.
     </p>
     </div>
     </div>
@@ -213,6 +287,27 @@
 <footer>
     <p>© Frances Reanna Rugayan, 2025</p>
 </footer>
+
+<script>
+  let albums = document.getElementsByClassName("image");
+
+  for (let i = 0; i < albums.length; i++) {
+    albums[i].onmouseover = function () {
+      this.style.transform = "scale(1.1)";
+      this.style.transition = "0.3s";
+    };
+
+    albums[i].onmouseout = function () {
+      this.style.transform = "scale(1)";
+    };
+  }
+</script>
+</body>
+</html>
+
+
+
+
 
 
 </html>

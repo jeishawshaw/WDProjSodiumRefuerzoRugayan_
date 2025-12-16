@@ -19,6 +19,11 @@
 #### - Each subpage has a menu at the side in the form of a rectangular figure representing a tire, which will show the other pages.
 #### - The bottom of the pages will contain various information, such as the author of the webpage.
 ******
+#### How we will apply JS into our code;
+
+#### In the Albums page, we will add an interactive randomized game that tells you how your Taylor Swift album. There will also be a javascript code that makes Taylor Swift's interests and hobbies formatted as a checklist, where you are able to tick the boxes. 
+
+******
 ## Wireframes:
 #### Home Page:
 ### <img width="500" height="500" alt="cs proj proposal" src="https://github.com/user-attachments/assets/8477ea4c-433f-4bd3-bbbc-894d7cec6f5c" />
