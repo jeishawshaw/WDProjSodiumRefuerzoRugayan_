@@ -43,6 +43,6 @@
 # 3rdQ Update
 ## Swiftie Verse
 ## This webpage aims to compile all of Taylor Swift's albums and their history so that her fans and even those just discovering her music are able to appreciate not just her music itself, but the background behind it. We aim to make this website a comprehensive guide to Taylor's music for the audience.
-## Features: Dropdown menu (in the menu of the pages to click), Animation (in the pictures), Theme Toggling (light & dark mode)
-## Details: Friendship bracelet maker (with our own custom beads using drag and drop), and our own recording of piano Taylor Swift songs
+## Features: Dropdown menu (in the menu of the pages to click in the top bar), Animation (in the pictures), Theme Toggling (to switch between light & dark mode)
+## Details: Friendship bracelet maker (with our own custom beads using drag and drop, we'll put this in a new page), and our own recording of piano Taylor Swift songs (at the top right corner beside the dropdowns, so users can play it anytime)
 ## All javascript code is complete, the website is pleasant to look at, the pictures and code are complete and working, all the sources are cited properly, and of course, we love it!! <3
