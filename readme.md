@@ -39,3 +39,10 @@
 ### <img width="500" height="500" alt="cs proj proposal (5)" src="https://github.com/user-attachments/assets/47177cca-2df2-44fc-a646-e096faeb7e8c" />
 #### Sources Page:
 ### <img width="500" height="500" alt="cs proj proposal (7)" src="https://github.com/user-attachments/assets/1641ce00-0b15-4f43-8f83-ad7cadb371c9" />
+
+# 3rdQ Update
+## Swiftie Verse
+## This webpage aims to compile all of Taylor Swift's albums and their history so that her fans and even those just discovering her music are able to appreciate not just her music itself, but the background behind it. We aim to make this website a comprehensive guide to Taylor's music for the audience.
+## Features: Dropdown menu (in the menu of the pages to click), Animation (in the pictures), Theme Toggling (light & dark mode)
+## Details: Friendship bracelet maker (with our own custom beads using drag and drop), and our own recording of piano Taylor Swift songs
+## All javascript code is complete, the website is pleasant to look at, the pictures and code are complete and working, all the sources are cited properly, and of course, we love it!! <3
