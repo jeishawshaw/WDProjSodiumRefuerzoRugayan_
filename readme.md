@@ -11,7 +11,7 @@
 ### P1 (Albums): This page will showcase Taylor Swift's 12 studio albums throughout her music career (from Debut to The Life of a Showgirl). In each album, it will discuss its unique characteristics and other related information.
 ### P2 (Timeline): This page will talk about the life of Taylor's career, like the awards, achievements, and challenges she faced to achieve the success she has now.
 ### P3 (Lyrics): This page will include Taylor's iconic lyrics and quotes together with their true meanings.
-### P4 (Concerts): This page will present Taylor's major concerts throughout her career. It will include information such as the year, album, stage setup, countries, and fan experience.
+### P4 (Concerts): This page will present Taylor's major concerts throughout her career. It will include information such as the year, album, stage setup, countries, and fan experience. 
 ### P5 (About TS): Aside from Taylor's massive part in the music industry, this page will talk about her not as a pop singer, but also as a person. This page will talk about Taylor's hobbies, interests, pets, lifestyle, and current status.
 ### P6 (Sources): This page will contain the list of all the sources used for the project.
 ******
@@ -21,7 +21,7 @@
 ******
 #### How we will apply JS into our code;
 
-#### In the Albums page, we will add an interactive randomized game that tells you how your Taylor Swift album. There will also be a javascript code that makes Taylor Swift's interests and hobbies formatted as a checklist, where you are able to tick the boxes. 
+#### In the Albums page, we will add an interactive randomized game that tells you how your Taylor Swift album. There will also be a javascript code that makes Taylor Swift's interests and hobbies formatted as a checklist, where you are able to tick the boxes. We will also add a dropdown so that you'll be able to switch pages without refreshing, allowing it to be smoother.
 
 ******
 ## Wireframes:
