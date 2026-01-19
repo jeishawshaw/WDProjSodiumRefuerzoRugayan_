@@ -11,7 +11,7 @@
 ### P1 (Albums): This page will showcase Taylor Swift's 12 studio albums throughout her music career (from Debut to The Life of a Showgirl). In each album, it will discuss its unique characteristics and other related information.
 ### P2 (Timeline): This page will talk about the life of Taylor's career, like the awards, achievements, and challenges she faced to achieve the success she has now.
 ### P3 (Lyrics): This page will include Taylor's iconic lyrics and quotes together with their true meanings.
-### P4 (Concerts): This page will present Taylor's major concerts throughout her career. It will include information such as the year, album, stage setup, countries, and fan experience. 
+### P4 (Concerts): This page will present Taylor's most recent concerts, The Eras Tour. It will include information such as the duration, album, stage setup, countries, and fan experience. 
 ### P5 (About TS): Aside from Taylor's massive part in the music industry, this page will talk about her not as a pop singer, but also as a person. This page will talk about Taylor's hobbies, interests, pets, lifestyle, and current status.
 ### P6 (Sources): This page will contain the list of all the sources used for the project.
 ******
@@ -43,6 +43,6 @@
 # 3rdQ Update
 ## Swiftie Verse
 ## This webpage aims to compile all of Taylor Swift's albums and their history so that her fans and even those just discovering her music are able to appreciate not just her music itself, but the background behind it. We aim to make this website a comprehensive guide to Taylor's music for the audience.
-## Features: Dropdown menu (in the menu of the pages to click in the top bar), Animation (in the pictures), Theme Toggling (to switch between light & dark mode)
-## Details: Friendship bracelet maker (with our own custom beads using drag and drop, we'll put this in a new page), and our own recording of piano Taylor Swift songs (at the top right corner beside the dropdowns, so users can play it anytime)
+## Features: Dropdown menu (in the menu of the pages to click in the top bar), Animation (in the pictures), Theme Toggling (to switch between light & dark mode), More 'slideshow' view of images.
+## Details: We added a feature in the concerts page where you can press a button to add/remove your friendship bracelet to get you in theme with the eras tour. Addtionally, some pages feature recorded taylor swift music downloaded using mp3.
 ## All javascript code is complete, the website is pleasant to look at, the pictures and code are complete and working, all the sources are cited properly, and of course, we love it!! <3
