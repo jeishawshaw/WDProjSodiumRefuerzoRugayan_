@@ -10,10 +10,9 @@
 ### Home Page: The Home Page will include a description of the website's purpose and why we chose this theme. Additionally, it will contain a simple menu that will allow the user to go to each of the other 5 web pages. 
 ### P1 (Albums): This page will showcase Taylor Swift's 12 studio albums throughout her music career (from Debut to The Life of a Showgirl). In each album, it will discuss its unique characteristics and other related information.
 ### P2 (Timeline): This page will talk about the life of Taylor's career, like the awards, achievements, and challenges she faced to achieve the success she has now.
-### P3 (Lyrics): This page will include Taylor's iconic lyrics and quotes together with their true meanings.
-### P4 (Concerts): This page will present Taylor's most recent concerts, The Eras Tour. It will include information such as the duration, album, stage setup, countries, and fan experience. 
-### P5 (About TS): Aside from Taylor's massive part in the music industry, this page will talk about her not as a pop singer, but also as a person. This page will talk about Taylor's hobbies, interests, pets, lifestyle, and current status.
-### P6 (Sources): This page will contain the list of all the sources used for the project.
+### P3 (Concerts): This page will present Taylor's most recent concerts, The Eras Tour. It will include information such as the duration, album, stage setup, countries, and fan experience. 
+### P4 (About TS): Aside from Taylor's massive part in the music industry, this page will talk about her not as a pop singer, but also as a person. This page will talk about Taylor's hobbies, interests, pets, lifestyle, and current status.
+### P5 (Sources): This page will contain the list of all the sources used for the project.
 ******
 ### Other Notes:
 #### - Each subpage has a menu at the side in the form of a rectangular figure representing a tire, which will show the other pages.

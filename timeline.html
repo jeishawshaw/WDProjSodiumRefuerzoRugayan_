@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="something.css">
+
+<style>
+body {
+  margin: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2018/02/16/02/03/pocket-watch-3156771_640.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: hotpink;
+  color: white;
+  text-align: center;
+  padding: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: hotpink;
+  font-weight: bold;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  margin: 60px auto;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+  color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+.caption h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.caption p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 14px;
+  color: white;
+  font-size: 22px;
+  background-color: rgba(0,0,0,0.5);
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+}
+.prev {
+  left: -5px; /* moves the left arrow further left */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* FOOTER */
+footer {
+  background-color: hotpink;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="logo" style="width:80px; height:auto;">  
+    <h1> Swiftie Verse: 
+
+    </h1>
+    <h3>A journey through the different eras of Taylor Swift </h3>
+  </header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="albums.html">Albums</a></li>
+    <li><a href="timeline.html"><strong>Timeline</strong></a></li>
+    <li><a href="concerts.html">Concerts</a></li>
+    <li><a href="about.html">About TS</a></li>
+    <li><a href="sources.html">Sources</a></li>
+  </ul>
+</nav>
+
+<div class="slideshow-container">
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Taylor_Swift_-_Taylor_Swift.png">
+    <div class="caption">
+      <h2>2006 – The first album</h2>
+      <p>Taylor releases her debut album, Taylor Swift, after signing with Big Machine Records!</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Taylor_Swift_-_Fearless.png">
+    <div class="caption">
+      <h2>2009 – First Grammy Win</h2>
+      <p>Fearless wins Album of the Year, making her the youngest winner of the award!</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Taylor_Swift_-_Speak_Now_cover.png">
+    <div class="caption">
+      <h2>2010 – Owning her voice</h2>
+      <p>Speak Now is written entirely by Taylor alone, which is Taylor's Version.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/e/e8/Taylor_Swift_-_Red.png">
+    <div class="caption">
+      <h2>2012 – Growing pain</h2>
+      <p>Red captures heartbreak, but at the same time change, and musical exploration.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png">
+    <div class="caption">
+      <h2>2014 – The pop reinvention</h2>
+      <p>1989 marks her full transition into becoming a pop artist!</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png">
+    <div class="caption">
+      <h2>2017 – Reputation </h2>
+      <p>Taylor reclaims her narrative after getting hate online, in her album reputation.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png">
+    <div class="caption">
+      <h2>2019 – Healing & freedom</h2>
+      <p>Lover celebrates her self-acceptance and personal growth</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png">
+    <div class="caption">
+      <h2>2020 – Reinvention</h2>
+      <p>folklore and evermore released during the pandemic, redefines her artistry, even during hard times.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Midnights_-_Taylor_Swift.png">
+    <div class="caption">
+      <h2>2022 – Sleepless Nights (Literally)</h2>
+      <p>Midnights breaks records across global charts!</p>
+    </div>
+  </div>
+
+<div class="slide">
+  <img src="https://i8.amplience.net/i/naras/Taylor-Swift-Eras-Tour-GettyImages-1474459622">
+  <div class="caption">
+    <h2>2023 – The Eras Tour</h2>
+    <p>This was the highest-grossing tour in music history.</p>
+  </div>
+</div>
+
+
+
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<footer>
+  <p>© Frances Reanna Rugayan & Saulenn Jeisha Refuerzo, 2025</p>
+</footer>
+
+<script>
+let index = 1;
+showSlide(index);
+
+function changeSlide(n) {
+  showSlide(index += n);
+}
+
+function showSlide(n) {
+  let slides = document.getElementsByClassName("slide");
+  if (n > slides.length) index = 1;
+  if (n < 1) index = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[index - 1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
