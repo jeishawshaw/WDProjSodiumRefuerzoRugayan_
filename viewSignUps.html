@@ -5,7 +5,6 @@
 <title>Show List of Students Who Signed-Up</title>
 
 <style>
-/* YOUR CSS IS 100% UNCHANGED */
 body{
 background-color: rgb(249, 222, 233);
 }
@@ -104,11 +103,19 @@ function loadTable(filter = "ALL") {
 <label>Select Your Club:
 <select onchange="loadTable(this.value)">
 <option value="ALL">-- select an option --</option>
-<option>The Science Scholar</option>
-<option>Ang Lagablab</option>
-<option>FLUX</option>
-<option>Volant</option>
-<option>Solace</option>
+<option>Debut</option>
+<option>Fearless</option>
+<option>Speak Now</option>
+<option>Red</option>
+<option>1989</option>
+<option>Reputation</option>
+<option>Lover</option>
+<option>Folklore</option>
+<option>Evermore</option>
+<option>Midnights</option>
+<option>TTPD
+</option>
+<option>TLOAS</option>
 </select>
 </label>
 
@@ -117,13 +124,13 @@ function loadTable(filter = "ALL") {
 <table>
 <thead>
 <tr>
-<th>Club</th>
-<th>ID</th>
+<th>Album</th>
+<th>Number of Albums</th>
 <th>Fullname</th>
-<th>Grade</th>
+<th>Years</th>
 <th>Email</th>
 <th>Mobile</th>
-<th>Intern/Extern</th>
+<th>Concert</th>
 </tr>
 </thead>
 <tbody id="tableBody"></tbody>
