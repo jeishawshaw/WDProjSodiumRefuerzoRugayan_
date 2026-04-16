@@ -51,8 +51,8 @@ function saveSignup(event){
 
 <style>
     body{
-        background-image: url(https://media.architecturaldigest.com/photos/664215bbe8f993fb5b10e7dc/16:9/w_2560%2Cc_limit/GettyImages-2152509342.jpg);
-    }
+        background-color: linear gradient(to right, #ffecd2, #fc9fc3);
+        }
     header h1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
@@ -99,7 +99,7 @@ function saveSignup(event){
 <fieldset>
 <legend>Swiftie Information</legend>
 
-<label>ID Number
+<label> Number of Favorite Albums (its ok if not all/any):
 <input type="number" name="studentID" required>
 </label><br><br>
 
@@ -121,31 +121,36 @@ function saveSignup(event){
 <input type="text" name="mobilePhone" required onblur="checkBlank(this)">
 </label><br><br>
 
-<label>Grade Level (if student):
+<label>How Many Years Have You Been A Swiftie?:
 <select name="gradeLevel" required>
 <option value=""></option>
-<option>Grade 7</option>
-<option>Grade 8</option>
-<option>Grade 9</option>
-<option>Grade 10</option>
-<option>Grade 11</option>
-<option>Grade 12</option>
-<option>Not a Student</option>
+<option>before 2020</option>
+<option> 2020-2023 </option>
+<option> 2024-2025 </option>
+<option> Just became one recently!!! </option>
 </select>
 </label><br><br>
 
-<p>Residency Type:</p>
-<label><input type="radio" name="residency" value="I" required> Intern</label><br>
-<label><input type="radio" name="residency" value="E"> Extern</label><br><br>
+<p>Ever been to a Taylor Swift Concert? </p>
+<label><input type="radio" name="residency" value="Yes (Intern)" required> Yes</label><br>
+<label><input type="radio" name="residency" value="No (Extern)"> No </label><br><br>
 
-<label>Preferred Club:
+<label>Preferred Album:
 <select name="preferredEC" required>
 <option value=""></option>
-<option>The Science Scholar</option>
-<option>Ang Lagablab</option>
-<option>FLUX</option>
-<option>Volant</option>
-<option>Solace</option>
+<option>Debut</option>
+<option>Fearless</option>
+<option>Speak Now</option>
+<option>Red</option>
+<option>1989</option>
+<option>Reputation</option>
+<option>Lover</option>
+<option>Folklore</option>
+<option>Evermore</option>
+<option>Midnights</option>
+<option>TTPD
+</option>
+<option>TLOAS</option>
 </select>
 </label><br><br>
 
