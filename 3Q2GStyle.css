@@ -1,3 +1,4 @@
+/* Changing the overall page layout and default text */
 body {
     margin: 20px 5px;
     text-align: center;
@@ -5,6 +6,7 @@ body {
     color: #750551;
     background-color:pink;
 }
+
 h1{
     font-family:cursive;
 }
