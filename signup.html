@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <title>Swiftie Verse - Sign Up</title>
 
+    <!-- links external css files -->
     <link rel="stylesheet" href="3Q2GStyle.css">
     <link rel="stylesheet" href="something.css">
 
 <script>
+// asks user to confirm before submitting form
 function confirmSubmission(){
     return confirm("Are you sure all information in the submission is complete and true?");
 }
 
+// asks user to confirm before resetting the form
 function confirmReset(){
     return confirm("Are you sure you want to reset this form?");
 }
 
+// checks if the input is blank and adds or removes error style
 function checkBlank(field){
     if(field.value.trim() === ""){
         field.classList.add("Error");
@@ -24,13 +28,15 @@ function checkBlank(field){
     }
 }
 
+// saves form data to local storage
 function saveSignup(event){
-    event.preventDefault();
-    if(!confirmSubmission()) return;
+    event.preventDefault(); // stops default form submission
+    if(!confirmSubmission()) return; // stops if user cancels
 
-    let signups = JSON.parse(localStorage.getItem("signups")) || [];
+    let signups = JSON.parse(localStorage.getItem("signups")) || []; // gets existing data
     let form = event.target;
 
+    // creates object with form data
     let signupData = {
         id: form.studentID.value,
         name: form.userName.value,
@@ -41,20 +47,21 @@ function saveSignup(event){
         club: form.preferredEC.options[form.preferredEC.selectedIndex].text
     };
 
-    signups.push(signupData);
-    localStorage.setItem("signups", JSON.stringify(signups));
+    signups.push(signupData); // adds new data
+    localStorage.setItem("signups", JSON.stringify(signups)); // saves to storage
 
     alert("Signup saved successfully!");
-    form.reset();
+    form.reset(); // clears form
 }
 </script>
 
 <style>
     body{
         background-color: linear gradient(to right, #ffecd2, #fc9fc3);
-        }
+    }
     header h1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     div{
         background-image: url(https://assets.aboutamazon.com/dc/87/3905790f45d6a3f2eedaef596151/still-image-1.jpg);
@@ -65,6 +72,7 @@ function saveSignup(event){
       text-decoration: underline;
       color: rgb(255, 255, 255);
     }
+
     a:visited {
       color:rgb(255, 255, 255);
     }
@@ -76,10 +84,12 @@ function saveSignup(event){
 
 <header>
     <img src="logo.png" alt="logo" style="width:80px; height:auto;">  
+
     <h1>Swiftie Verse:</h1>
     <h3>A journey through the different eras of Taylor Swift</h3>
 </header>
 
+<!-- navigation menu -->
 <nav>
 <ul>
 <li><a href="signup.html">SignUp</a></li>
@@ -101,8 +111,9 @@ function saveSignup(event){
 
 <label> Number of Favorite Albums (its ok if not all/any):
 <input type="number" name="studentID" required>
-</label><br><br>
-
+</label><br>
+    <br>
+    
 <label>Full Name:
 <input type="text" name="userName" required onblur="checkBlank(this)">
 </label><br><br>
@@ -120,7 +131,7 @@ function saveSignup(event){
 <label>Mobile Phone:
 <input type="text" name="mobilePhone" required onblur="checkBlank(this)">
 </label><br><br>
-
+    
 <label>How Many Years Have You Been A Swiftie?:
 <select name="gradeLevel" required>
 <option value=""></option>
@@ -135,6 +146,7 @@ function saveSignup(event){
 <label><input type="radio" name="residency" value="Yes (Intern)" required> Yes</label><br>
 <label><input type="radio" name="residency" value="No (Extern)"> No </label><br><br>
 
+    <!--dropdown-->
 <label>Preferred Album:
 <select name="preferredEC" required>
 <option value=""></option>
@@ -148,8 +160,7 @@ function saveSignup(event){
 <option>Folklore</option>
 <option>Evermore</option>
 <option>Midnights</option>
-<option>TTPD
-</option>
+<option>TTPD</option>
 <option>TLOAS</option>
 </select>
 </label><br><br>
@@ -160,10 +171,12 @@ function saveSignup(event){
 
 <br>
 
+<!-- buttons -->
 <input type="submit" value="Submit Application">
 <input type="reset" value="Reset Application">
 <br><br>
 
+<!-- link to view saved data -->
 <a href="viewSignUps.html">View Signups</a>
 
 </form>
