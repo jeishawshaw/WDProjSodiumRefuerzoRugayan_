@@ -60,23 +60,28 @@ padding: 2px;
 <script>
 function loadTable(filter = "ALL") {
 
+    // gets saved signups from local storage
     let signups = JSON.parse(localStorage.getItem("signups")) || [];
 
     let tbody = document.getElementById("tableBody");
-    tbody.innerHTML = "";
+    tbody.innerHTML = ""; // clears table
 
+    // filters data based on club selected in drop down
     let filtered = filter === "ALL"
         ? signups
         : signups.filter(s => s.club === filter);
 
+    // updates total count
     document.getElementById("total").textContent = filtered.length;
 
+    // shows message if theres no data
     if (filtered.length === 0) {
         tbody.innerHTML =
         `<tr><td colspan="7">No Sign Ups for the club</td></tr>`;
         return;
     }
 
+    // adds rows to table
     filtered.forEach(s => {
         tbody.innerHTML += `
         <tr>
