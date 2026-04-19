@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <link rel="icon" type="image/png" href="https://m.media-amazon.com/images/I/71U4Mwe+5DL._AC_UF894,1000_QL80_.jpg">
@@ -10,7 +11,6 @@
   <title>Swiftie Verse</title>
   
 <link rel="stylesheet" href="something.css">
-
 <style>
     #album-game {
   background-color: rgba(255, 255, 255, 0.85);
@@ -47,7 +47,7 @@
   display: none; /* hidden initially */
 }
 
-
+/*changes the colors and style of various texts of the page*/
      body{
         background-image: url(https://images.prestigeonline.com/wp-content/uploads/sites/5/2025/06/05113034/taylor-swift-masters-1600x900.jpeg);
 
@@ -84,6 +84,7 @@
 </style>
 </head>
 
+  
 <script>
   var albums = [
     { name: "Taylor Swift (Debut)", cover: "https://upload.wikimedia.org/wikipedia/en/1/1f/Taylor_Swift_-_Taylor_Swift.png" },
@@ -98,7 +99,7 @@
     { name: "Midnights", cover: "https://i.scdn.co/image/ab67616d0000b273fa747621a53c8e2cc436dee0" },
     { name: "The Tortured Poets Department", cover: "https://i.scdn.co/image/ab67616d0000b2738ecc33f195df6aa257c39eaa" },
   ];
-
+//creates the function of randomly generating an album 
   function pickAlbum() {
     const randomIndex = Math.floor(Math.random() * albums.length);
     const chosen = albums[randomIndex];
@@ -141,7 +142,7 @@
         Taylor's Studio Albums
     </h1>
     <section id="album-game">
-  <h2>Which Taylor Swift Album Are You?</h2>
+  <h2>Which Taylor Swift Album Are You?</h2> 
 
   <button onclick="pickAlbum()">What is my TS album?</button>
 
@@ -149,6 +150,8 @@
   <img id="album-cover" src="" alt="" style="display:none; width:300px; border-radius:20px;">
 </section>
 
+
+  //describes each of her albums as well as a picture of it and audio file of a popular song
 </main>
 
 <b>
@@ -351,6 +354,9 @@
     <p>© Frances Reanna Rugayan & Saulenn Jeisha Refuerzo, 2025</p>
 </footer>
 
+  
+/*gives a hover zoom effect to the album covers */
+  
 <script>
   let albums = document.getElementsByClassName("image");
 
@@ -366,7 +372,7 @@
   }
 </script>
 </body>
-</html>
+</html> 
 
 
 
