@@ -226,21 +226,27 @@ footer {
 
 <script>
 let index = 1;
-showSlide(index);
+showSlide(index); // shows first slide 
 
+// changes slide based on an arrow click
 function changeSlide(n) {
   showSlide(index += n);
 }
 
+// controls which slide is visible
 function showSlide(n) {
   let slides = document.getElementsByClassName("slide");
+
+  // loops back if the last slide is alread done
   if (n > slides.length) index = 1;
   if (n < 1) index = slides.length;
 
+  // hides all slides
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
+  // shows current slide
   slides[index - 1].style.display = "block";
 }
 </script>
